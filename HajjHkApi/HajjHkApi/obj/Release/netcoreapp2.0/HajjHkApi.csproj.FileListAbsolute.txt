@@ -1,0 +1,11 @@
+C:\Users\AbuJude\source\repos\HajjHkApi\HajjHkApi\bin\Release\netcoreapp2.0\HajjHkApi.deps.json
+C:\Users\AbuJude\source\repos\HajjHkApi\HajjHkApi\bin\Release\netcoreapp2.0\HajjHkApi.runtimeconfig.json
+C:\Users\AbuJude\source\repos\HajjHkApi\HajjHkApi\bin\Release\netcoreapp2.0\HajjHkApi.runtimeconfig.dev.json
+C:\Users\AbuJude\source\repos\HajjHkApi\HajjHkApi\bin\Release\netcoreapp2.0\HajjHkApi.dll
+C:\Users\AbuJude\source\repos\HajjHkApi\HajjHkApi\bin\Release\netcoreapp2.0\HajjHkApi.pdb
+C:\Users\AbuJude\source\repos\HajjHkApi\HajjHkApi\obj\Release\netcoreapp2.0\HajjHkApi.csprojAssemblyReference.cache
+C:\Users\AbuJude\source\repos\HajjHkApi\HajjHkApi\obj\Release\netcoreapp2.0\HajjHkApi.csproj.CoreCompileInputs.cache
+C:\Users\AbuJude\source\repos\HajjHkApi\HajjHkApi\obj\Release\netcoreapp2.0\HajjHkApi.AssemblyInfoInputs.cache
+C:\Users\AbuJude\source\repos\HajjHkApi\HajjHkApi\obj\Release\netcoreapp2.0\HajjHkApi.AssemblyInfo.cs
+C:\Users\AbuJude\source\repos\HajjHkApi\HajjHkApi\obj\Release\netcoreapp2.0\HajjHkApi.dll
+C:\Users\AbuJude\source\repos\HajjHkApi\HajjHkApi\obj\Release\netcoreapp2.0\HajjHkApi.pdb
