@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <!-- Start file -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>حالة المطاف</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="context.css" /> <!-- hayp body--> 
+    <script src="main.js"></script>
+</head>
+<body style="background-image:url('images/back1.jpg');background-repeat: no-repeat;background-size:100% 100vh;">
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <div>
+        <div id="header" class="">
+            <span id="percentageNumber"></span>
+        </div>
+        
+        <div style="text-align: center">
+            <img id="sample" src="images/944011568-1024x1024.jpg" alt="" width="300px" height="300px">
+            <h1 style="color: #ffeaa7; font-weight: bold;text-align: center ">Crowd Level - نسبة الزحام</h1>
+
+        </div>
+    </div>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script>
+
+    function updatePercentage(percentage)
+    {
+
+        $("#percentageNumber").text(percentage + " %");
+
+        $("#header").removeClass();
+        $("#header").addClass("header");
+        $("#sample").attr("src","");
+
+        if(percentage<=25){
+            $("#header").addClass("full25");
+           $("#sample").attr("src","images/green.png");
+        }
+        else if(percentage<=50){
+            $("#header").addClass("full50");
+           $("#sample").attr("src","images/yellow.png");
+        }
+        else if(percentage <= 85)
+        {
+            $("#header").addClass("full75");
+            $("#sample").attr("src","images/orange.png");
+        }
+        else{
+            $("#header").addClass("full100");
+            $("#sample").attr("src","images/red2.png");
+        }
+    }
+
+     function getLatestPercentage(){
+        $.ajax({
+        url: "http://hajjhkapi.azurewebsites.net/api/crowdlevel",
+        success: function(data){
+            var prcnt = data[data.length -1].percentage;
+            console.log(prcnt);
+            updatePercentage(prcnt);
+        },
+        dataType: "json"
+        });
+    }
+
+
+
+
+      $(function(){
+
+          setInterval(function(){
+            //  updatePercentage(Math.floor((Math.random() * 100) + 1));
+
+            getLatestPercentage();
+
+          },5000);
+
+            
+    });
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,36 @@
+#HederWeb{
+	width : 500xp;
+	border:solid 20px #fbc531;
+	padding-top : 20px;
+	font-size: 35px;
+	color :red;
+	margin-left : 0 auto;
+}
+
+.header{
+	text-align: center;
+	font-weight: bold;
+	font-size: 75px;
+}
+.full25{
+	color: green;
+	
+	
+}
+
+.full50{
+	color: yellow;
+	
+}
+.full75{
+	color: orange;
+	
+	
+	
+}
+.full100{
+	color: red;
+	
+}
+
+
